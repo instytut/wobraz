@@ -1,3 +1,6 @@
+# Codeblocks projects files
+*.layout
+
 # Prerequisites
 *.d
 

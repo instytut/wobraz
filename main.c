@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(int argc, char** argv)
 {
-    printf("Hello world!\n");
+    if(argc == 1) {
+        printf("Full darkness!\n");
+    } else {
+        printf("Blind recognition:Rectangle!\n");
+    }
     return 0;
 }
