@@ -13,7 +13,15 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="$(#opencv_inst.include)" />
 				</Compiler>
+				<Linker>
+					<Add library="opencv_core320.dll" />
+					<Add library="opencv_highgui320.dll" />
+					<Add library="opencv_imgproc320.dll" />
+					<Add library="opencv_imgcodecs320.dll" />
+					<Add directory="$(#opencv_inst.lib)" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/wobraz" prefix_auto="1" extension_auto="1" />
@@ -22,9 +30,15 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="$(#opencv_inst.include)" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="opencv_core320.dll" />
+					<Add library="opencv_highgui320.dll" />
+					<Add library="opencv_imgproc320.dll" />
+					<Add library="opencv_imgcodecs320.dll" />
+					<Add directory="$(#opencv_inst.lib)" />
 				</Linker>
 			</Target>
 		</Build>

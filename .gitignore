@@ -1,5 +1,6 @@
 # Codeblocks projects files
 *.layout
+*.depend
 
 # Prerequisites
 *.d
